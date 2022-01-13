@@ -26,10 +26,22 @@ python3 main.py
 
 # Örnek 1
 
-python3 main.py çıktısı :
+python3 main.py çıktısı : elektrikli soba
 
 ![](img/elektrikli-soba.png)
 
 gittigidiyor karşılaştırma : 
 
 ![](img/gittigidiyor-elektrikli-soba.png)
+
+# Örnek 2
+
+python3 main.py çıktısı : samsung galaxy note 9
+
+![](img/samsung-galaxy-note-9.png)
+
+gittigidiyor karşılaştırma : 
+
+![](img/gittigidiyor-samsung-galaxy-note-9.png)
+
+
