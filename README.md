@@ -28,28 +28,28 @@ python3 main.py
 
 python3 main.py çıktısı : elektrikli soba
 
-![](img/elektrikli-soba.png)
+![](Gitti-Gidiyor-V-0.0.1/img/elektrikli-soba.png)
 
 gittigidiyor karşılaştırma : 
 
-![](img/gittigidiyor-elektrikli-soba.png)
+![](Gitti-Gidiyor-V-0.0.1/img/gittigidiyor-elektrikli-soba.png)
 
 # Örnek 2
 
 python3 main.py çıktısı : samsung galaxy note 9
 
-![](img/samsung-galaxy-note-9.png)
+![](Gitti-Gidiyor-V-0.0.1/img/samsung-galaxy-note-9.png)
 
 gittigidiyor karşılaştırma : 
 
-![](img/gittigidiyor-samsung-galaxy-note-9.png)
+![](Gitti-Gidiyor-V-0.0.1/img/gittigidiyor-samsung-galaxy-note-9.png)
 
 # Örnek 3
 
 python3 main.py çıktısı : samsung galaxy note 9
 
-![](img/utu-masasi.png)
+![](Gitti-Gidiyor-V-0.0.1/img/utu-masasi.png)
 
 gittigidiyor karşılaştırma : 
 
-![](img/gittigidiyor-utu-masasi.png)
+![](Gitti-Gidiyor-V-0.0.1/img/gittigidiyor-utu-masasi.png)
