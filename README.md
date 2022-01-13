@@ -44,4 +44,12 @@ gittigidiyor karşılaştırma :
 
 ![](img/gittigidiyor-samsung-galaxy-note-9.png)
 
+# Örnek 3
 
+python3 main.py çıktısı : samsung galaxy note 9
+
+![](img/utu-masasi.png)
+
+gittigidiyor karşılaştırma : 
+
+![](img/gittigidiyor-utu-masasi.png)
