@@ -9,9 +9,9 @@ class Uygulama():
     def __init__(self,):
 
         aranacak_sey = input("Aranacak ürün ismi giriniz : ")
-        boslukdoldur = aranacak_sey.replace(' ','+')
+        boslukdoldur = aranacak_sey.replace(' ','%20')
 
-        url = f"https://www.gittigidiyor.com/arama/?k={boslukdoldur}&qm=1"
+        url = f"https://www.gittigidiyor.com/arama/?k={boslukdoldur}&scdym={boslukdoldur}"
         response = requests.get(url)
         html_icerigi = response.content
         soup = BeautifulSoup(html_icerigi, "html.parser")
