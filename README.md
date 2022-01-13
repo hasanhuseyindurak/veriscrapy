@@ -24,4 +24,12 @@ Python 3.x
 
 python3 main.py
 
-![](img/img1.png)
+# Örnek 1
+
+python3 main.py çıktısı :
+
+![](img/elektrikli-soba.png)
+
+gittigidiyor karşılaştırma : 
+
+![](img/gittigidiyor-elektrikli-soba.png)
