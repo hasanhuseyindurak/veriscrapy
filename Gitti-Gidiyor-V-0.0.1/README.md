@@ -46,7 +46,7 @@ gittigidiyor karşılaştırma :
 
 # Örnek 3
 
-python3 main.py çıktısı : samsung galaxy note 9
+python3 main.py çıktısı : ütü masası
 
 ![](img/utu-masasi.png)
 
