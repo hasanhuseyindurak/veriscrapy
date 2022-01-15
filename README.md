@@ -11,5 +11,7 @@ Verileri çekip pandas ile listeleme yapıldı.
 Hedef : 
 
 1 - N11'den istenilen ürün aramaya göre çıkan sonuçları pandas ile listeleyecek
+
 2 - Trendyol'dan istenilen ürünü aramaya göre çıkan sonuçları pandas ile listeleyecek
+
 3 - Veritabanına Tarih ve saat iki ayrı blok olmak üzere sonuçlar kategorili bir şekilde kayıt ettirilecek
