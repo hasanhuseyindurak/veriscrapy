@@ -1,8 +1,12 @@
 # veriscrapy
 
-# GİTTİGİDİYOR V.0.0.1
+# GİTTİGİDİYOR V.0.0.2
 
-Gittigidiyordan istenilen ürün aramaya göre çıkan sonuçları pandas ile listeliyoruz.
+1 - N11'den istenilen ürün aramaya göre çıkan sonuçları pandas ile listeleyecek  => YAPILMIŞTIR
+
+2 - Trendyol'dan istenilen ürünü aramaya göre çıkan sonuçları pandas ile listeleyecek => YAKINDA YAPILACAKTIR
+
+3 - Veritabanına Tarih ve saat iki ayrı blok olmak üzere sonuçlar kategorili bir şekilde kayıt ettirilecek => YAKINDA YAPILACAKTIR
 
 # Nasıl yüklenilir ?
 
