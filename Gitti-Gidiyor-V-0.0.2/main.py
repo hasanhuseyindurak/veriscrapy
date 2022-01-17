@@ -12,32 +12,61 @@ class Uygulama():
 
         print("Veriler Sitelere Bakılarak Analiz Ediliyor")
 
-        self.gittigidiyor(boslukdoldur)
+        # self.gittigidiyor(boslukdoldur)
+        #
+        # print("=======================================================================================")
+        # print("===================================== GİTTİ GİDİYOR ===================================")
+        # print("=======================================================================================")
+        # for i in range(len(self.gittigidiyorliste)):
+        #     uruns_ad = self.gittigidiyorliste[i][0].replace('\n','').strip()
+        #     uruns_fiyat = self.gittigidiyorliste[i][1].replace('\n','').strip()
+        #     print(f"Ürün Adı : {uruns_ad} - Ürün Fiyatı : {uruns_fiyat}")
+        # print("=======================================================================================")
+        #
+        # time.sleep(2)
+        #
+        # print("")
+        # print("")
+        #
+        # self.n11(boslukdoldur)
+        #
+        # print("=======================================================================================")
+        # print("===================================== N11 =============================================")
+        # print("=======================================================================================")
+        # for i in range(len(self.n11liste)):
+        #     urunss_ad = self.n11liste[i][0].replace('\n','').strip()
+        #     urunss_fiyat = self.n11liste[i][1].replace('\n','').strip()
+        #     print(f"Ürün Adı : {urunss_ad} - Ürün Fiyatı : {urunss_fiyat}")
+        # print("=======================================================================================")
 
-        print("=======================================================================================")
-        print("===================================== GİTTİ GİDİYOR ===================================")
-        print("=======================================================================================")
-        for i in range(len(self.gittigidiyorliste)):
-            uruns_ad = self.gittigidiyorliste[i][0].replace('\n','').strip()
-            uruns_fiyat = self.gittigidiyorliste[i][1].replace('\n','').strip()
-            print(f"Ürün Adı : {uruns_ad} - Ürün Fiyatı : {uruns_fiyat}")
-        print("=======================================================================================")
+        self.trendyol(boslukdoldur)
 
-        time.sleep(2)
-
-        print("")
-        print("")
-
-        self.n11(boslukdoldur)
-
-        print("=======================================================================================")
-        print("===================================== N11 =============================================")
-        print("=======================================================================================")
-        for i in range(len(self.n11liste)):
-            urunss_ad = self.n11liste[i][0].replace('\n','').strip()
-            urunss_fiyat = self.n11liste[i][1].replace('\n','').strip()
-            print(f"Ürün Adı : {urunss_ad} - Ürün Fiyatı : {urunss_fiyat}")
-        print("=======================================================================================")
+    def trendyol(self,urladress):
+        self.trendyolliste = []
+        boslukdoldur = urladress.replace(' ', '%20')
+        url = f'https://www.trendyol.com/sr?q={boslukdoldur}&qt={boslukdoldur}&st={boslukdoldur}&os=1'
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36 Edg/87.0.664.55"
+        }
+        response = requests.get(url, headers=headers)
+        html_icerigi = response.content
+        soup = BeautifulSoup(html_icerigi, "html.parser")
+        div0 = soup.find("div", class_="prdct-cntnr-wrppr")
+        div1 = div0.find_all("div", class_="p-card-wrppr")
+        # productTitle = div0.find("span", class_="prdct-desc-cntnr-name hasRatings").getText()
+        # div0 = soup.find_all('div', {'class': 'search-app'})
+        # div1 = div0.find('div', {'class': 'search-app-container'})
+        # div2 = div1.find('div', {'class': 'srch-rslt-cntnt'})
+        # div3 = div2.find('div', {'class': 'srch-prdcts-cntnr'})
+        # div4 = div3.find('div')
+        # div5 = div4.find_all('div', {'class': 'prdct-cntnr-wrppr'})
+        for i in range(0,len(div1)):
+            div2 = div1[i].find("div", class_="p-card-chldrn-cntnr")
+            div3 = div2.find("div", class_="prdct-desc-cntnr-wrppr")
+            div4 = div3.find("div", class_="prdct-desc-cntnr")
+            div5 = div4.find("div", class_="prdct-desc-cntnr-ttl-w two-line-text")
+            urn_adi = div5.find("span", class_="prdct-desc-cntnr-name hasRatings").text
+            print(urn_adi)
 
     def n11(self,urladress):
         self.n11liste = []
